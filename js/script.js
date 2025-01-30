@@ -9,7 +9,7 @@ function newItem() {
   let li = $('<li></li>');
   li.append(inputValue);
 
-  let crossOutButton = $('<crossOutButton></crossOutButton>');
+  let crossOutButton = $('<button></button>');
   crossOutButton.append(document.createTextNode('X'));
   li.append(crossOutButton);
 
