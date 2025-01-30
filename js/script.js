@@ -24,16 +24,20 @@ function newItem() {
       li.addClass("delete");
   });
 
-  $('#list').sortable();
+  $('#list').rearrangeable();
 }
 
 $(document).ready(function() {
-  $('#list').sortable();
+  $('#list').rearrangeable();
   
   $('#input').keydown(function(event) {
       if (event.keyCode === 13) {
           event.preventDefault();
           newItem();
       }
+  });
+
+  $('#button').on('click', function() {
+      newItem();
   });
 });

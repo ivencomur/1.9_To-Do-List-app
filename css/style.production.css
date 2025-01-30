@@ -37,7 +37,6 @@ header {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Todo List Styles */
 .container {
     padding: 20px;
     width: 300px;
@@ -103,7 +102,6 @@ li > crossOutButton {
     font-weight: 800;
 }
 
-/* Footer and Social Media Styles */
 .page-footer {
     margin-top: 40px;
     background-color: #3571cb;
