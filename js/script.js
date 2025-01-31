@@ -24,11 +24,11 @@ function newItem() {
       li.addClass("delete");
   });
 
-  $('#list').rearrangeable();
+  $('#list').sorteable();
 }
 
 $(document).ready(function() {
-  $('#list').rearrangeable();
+  $('#list').sorteable();
   
   $('#input').keydown(function(event) {
       if (event.keyCode === 13) {
