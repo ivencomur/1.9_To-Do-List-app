@@ -9,6 +9,15 @@ function newItem() {
   let li = $('<li></li>');
   li.append(inputValue);
 
+  let checkbox = $('<input type="checkbox"/>');
+  li.append(checkbox);
+  
+  let checkbox = $('<input type="checkbox" />');
+  checkbox.addEventListener('click', function(){
+    checkbox.addClass('completed')
+})
+li.append(checkbox);
+
   let crossOutButton = $('<button></button>');
   crossOutButton.append(document.createTextNode('X'));
   li.append(crossOutButton);
