@@ -12,22 +12,13 @@ body {
     line-height: 1.6;
     color: #333;
     padding: 20px;
+    text-align: center;
 }
 
 header {
     background-color: #3571cb;
     height: 60px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.profile {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header__title {
@@ -38,78 +29,91 @@ header {
 }
 
 .container {
-    padding: 20px;
     width: 300px;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 40px auto;
+    padding: 20px;
     background: white;
     border-radius: 5px;
 }
 
-form {
-    display: inline-block;
-}
-
 input {
-    padding: 4px 15px 4px 5px;
+    padding: 4px 15px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 #button {
     display: inline-block;
     background-color: #310686;
-    color: #ffffff;
+    color: white;
     border-radius: 5px;
     text-align: center;
     margin-top: 2px;
     padding: 5px 15px;
+    border: none;
+    cursor: pointer;
 }
 
 #button:hover {
+    opacity: 0.8;
+}
+
+#list {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    width: auto;
+}
+#list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #ddd;
     cursor: pointer;
-    opacity: .8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: relative;
 }
 
-ol {
-    padding-left: 20px;
+#list li .ui-icon {
+    cursor: airplane;
+    margin-right: 10px;
+    color:#f8d61f
 }
 
-ol li {
-    padding: 5px;
-    color: #000;
-}
-
-ol li:nth-child(even) {
-    background: #dfdfdf;
-}
-
-.strike {
+.completed {
     text-decoration: line-through;
+    color: #888;
 }
 
-li:hover {
-    cursor: pointer;
-}
-
-.delete {
-    display: none;
-}
-
-li > button {
+li button {
     background: none;
     border: none;
-    float: right;
     color: #025f70;
     font-weight: 800;
+    cursor: pointer;
+}
+
+li.delete {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
 }
 
 .page-footer {
     margin-top: 40px;
     background-color: #3571cb;
-    color: #fff;
+    color: white;
     padding: 20px;
-    text-align: center;
     border-radius: 8px;
     font-size: 0.7rem;
+    text-align: center;
+    
 }
 
 .page-footer a {
@@ -119,7 +123,7 @@ li > button {
 
 .page-footer a:hover {
     text-decoration: underline;
-}
+  }
 
 .social-media {
     display: flex;
@@ -137,36 +141,12 @@ li > button {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
     .header__title {
         font-size: 1.5rem;
     }
-    .to-do-list {
-        grid-template-columns: 1fr;
-    }
-    .button {
-        font-size: 1rem;
-    }
-}
-#list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 60%;
-}
-
-#list li {
-    margin: 0 3px 3px 3px;
-    padding: 0.4em;
-    padding-left: 1.5em;
-    font-size: 1.4em;
-    height: 18px;
-}
-
-#list li span {
-    position: absolute;
-    margin-left: -1.3em;
-}
-
-.completed{
-    text-decoration: line-through;
-}

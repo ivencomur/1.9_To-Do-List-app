@@ -2,16 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Ivan Cortés Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ivan Cortés Portfolio - To Do List</title>
     <link rel="shortcut icon" href="./img/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">   
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header></header>
@@ -21,28 +19,21 @@
         <h2 class="subheader__title">My To Do List App</h2>
         <br>
         <p>Double click to <em>mark</em> an item off, click on "X" to <em>delete</em> an item, and 
-          drag items to <em>reorder</em>.</em></p>
+          drag items to <em>reorder</em>.</p>
         <br>   
         <form name="toDoList">
           <input type="text" name="ListItem" id="input"/>
         </form>
         
-        <div onclick="newItem()" id="button">Add</div>
+        <div id="button">Add</div>
         <br/>
         <ol id="list"></ol>
       </div>
-      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-      <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-      <script src="./js/script.js"></script>
     </main>
     <footer class="page-footer">
-   
-      <br>
-      <br>
       <p>Ivan Cortés M.</p>
       <p>Lawrenceville, GA, USA.</p>
-      <p>Tel <a href="tel:+17608******">+17608******</a>
-      </p>
+      <p>Tel <a href="tel:+17608******">+17608******</a></p>
       <a href="mailto:ivancortes@hotmail.com">ivancortes@hotmail.com</a>
       <p>Find me on</p>
       <div class="social-media">
@@ -56,6 +47,9 @@
           <img src="./img/linkedinicon.svg" alt="LinkedIn" width="30" height="30">
         </a>
       </div>
-    </footer>
+    </footer>   
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>    
+    <script src="./js/script.js"></script>
   </body>
 </html>
