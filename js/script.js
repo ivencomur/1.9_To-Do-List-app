@@ -29,10 +29,12 @@ function newItem() {
 
     li.on("dblclick", function() {
         li.toggleClass("strike");
+        setTimeout(() => li.remove(), 300);
     });
 
     crossOutButton.on("click", function() {
         li.addClass("delete");
+        setTimeout(() => li.remove(), 300);
     });
 }
 
